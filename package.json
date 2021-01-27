@@ -1,0 +1,31 @@
+{
+  "name": "@inshur/inshur-apis",
+  "version": "1.0.0",
+  "description": "Inshur typescript apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api:generate-types": "ts-node --project ./scripts/tsconfig.json ./scripts/generate-api-types",
+    "artifactregistry-login": "npx google-artifactregistry-auth"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreask-inshur/inshur-apis-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreask-inshur/inshur-apis-ts/issues"
+  },
+  "homepage": "https://github.com/andreask-inshur/inshur-apis-ts#readme",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^1.0.13-4.3.1",
+    "execa": "^5.0.0",
+    "glob": "^7.1.6",
+    "glob-promise": "^3.4.0",
+    "listr": "^0.14.3",
+    "path": "^0.12.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
