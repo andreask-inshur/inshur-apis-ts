@@ -66,8 +66,8 @@ jobs:
 
           gcloud config set project $REPO_PROJECT
 
-#          gcloud artifacts print-settings npm --project=inshur-apis \
-#          [--repository=REPOSITORY] [--location=LOCATION] --scope=@SCOPE-NAME --json-key=KEY-FILE
+          gcloud artifacts print-settings npm --project=inshur-apis \
+          --repository=npm --location=europe --scope=@inshur --json-key=service_account_key.json > .npmrc
 
       - name: Use Node.js
         uses: actions/setup-node@v1
