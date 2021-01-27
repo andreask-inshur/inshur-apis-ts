@@ -80,6 +80,9 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Update version
+        run: npm version ${{ steps.get_tag_name.outputs.VERSION }}
+
       - name: Publish
         run: yarn publish
 
